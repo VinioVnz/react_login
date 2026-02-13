@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🔐 Login Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interface de autenticação desenvolvida em **React**, utilizando **Material UI**, integrada a uma API para autenticação de usuários.
 
-## Available Scripts
+Este projeto foi criado com foco em boas práticas, componentização e organização de código no front-end.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚛️ React  
+- 🎨 Material UI (MUI)  
+- 📦 Axios (requisições HTTP)  
+- 🔥 JavaScript  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Estrutura do Projeto
+```
+src/
+├── assets/images
+├── components/
+│ ├── login_form/
+| └── container_image/
+├── services/
+├── context/
+├── hooks/
+├── styles/
+├── App.js
+└── index.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Funcionalidades
 
-### `npm run build`
+- ✅ Campo de e-mail  
+- ✅ Campo de senha  
+- ✅ Validação básica de formulário  
+- ✅ Integração com API de login  
+- ✅ Tratamento de erros  
+- ✅ Layout responsivo  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔌 Integração com API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A aplicação consome uma API própria! https://github.com/VinioVnz/api_login
 
-### `npm run eject`
+### Endpoint esperado
+POST /login
+### Body da requisição
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```json
+{
+  "email": "usuario@email.com",
+  "password": "123456"
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Resposta esperada
+```json
+{
+  "token": "jwt_token_aqui"
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Como rodar o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1️⃣ Clone o repositório
+```bash
+git clone https://github.com/VinioVnz/react_login.git
+```
 
-## Learn More
+### 2️⃣ Instale as dependências
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3️⃣ Rode o projeto
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### O projeto estará disponível em:
+```bash
+http://localhost:3000
+```
 
-### Code Splitting
+## 📌 Melhorias Futuras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 👤 Criar tela de cadastro
 
-### Analyzing the Bundle Size
+### 🔄 Adicionar recuperação de senha
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🧪 Implementar testes com Jest e React Testing Library
 
-### Making a Progressive Web App
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Desenvolvido por Vinicius Bornhofen
