@@ -59,6 +59,10 @@ POST /login
 ### Resposta esperada
 ```json
 {
+   "user": {
+    "id": 1,
+    "email": "usuario@email.com"
+  },
   "token": "jwt_token_aqui"
 }
 ```
